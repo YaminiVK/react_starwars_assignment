@@ -1,3 +1,5 @@
+import { transformResult } from "./Utils/Helper";
+
 export const BASE_URL = 'https://swapi.dev/api/';
 
 export const fetchPeople = async(url) => {
@@ -33,7 +35,8 @@ export const fetchData = async(url) => {
         const homeWorld = await fetchDetails(person.homeworld);
         person.homeworld = homeWorld;
         const vehiclesList = await Promise.all(person.vehicles.map(vehicle=> fetchDetails(vehicle)));
-        person.vehicles = [...vehiclesList]
+        person.vehicles = [...vehiclesList];
+        person = transformResult(person);
     })
     return results;
 }

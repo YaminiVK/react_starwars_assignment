@@ -2,7 +2,6 @@ import React from 'react';
 import './App.css'
 
 const DisplayInfo = ({person}) => {
-delete person.url;
   return (
     <div>
       {
