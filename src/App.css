@@ -1,0 +1,39 @@
+.App {
+  text-align: center;
+  padding: 10px;
+  border: 2px solid black;
+}
+.header {
+  padding: 5px;
+  background-color: #ccc;
+  border: 1px solid black;
+}
+input {
+  width: 96%;
+  font-size: 16px;
+  padding: 12px 20px 12px 20px;
+  border: 2px solid #ddd;
+  margin-top: 10px;
+  background-color: #eee;
+}
+.row{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.column{
+  display: flex;
+  flex-direction: column;
+}
+li{
+  list-style-type: none;
+  border: 1px solid #ddd;
+  background-color: #eee;
+  text-decoration: none;
+  font-size: 18px;
+  color: black;
+  display: block;
+  margin-left: -40px;
+  text-align: start;
+  padding: 10px;
+}
