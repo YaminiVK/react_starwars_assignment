@@ -34,7 +34,6 @@ export const fetchData = async(url) => {
         person.homeworld = homeWorld;
         const vehiclesList = await Promise.all(person.vehicles.map(vehicle=> fetchDetails(vehicle)));
         person.vehicles = [...vehiclesList]
-        // TO DO transform results
     })
     return results;
 }

@@ -8,7 +8,7 @@ delete person.url;
       {
         Object.keys(person).map((key, i) => ( 
           <div className='row'>
-            { person[key] && <><div>{key.charAt(0).toLocaleUpperCase() + key.substring(1)}:</div>
+            { person[key] && <><div style={{textTransform:'capitalize'}}>{key}:</div>
             <i style={{paddingLeft:'10px'}}>{Array.isArray(person[key]) ? person[key].join(', ') : person[key]}</i></>}
           </div>
         ))
