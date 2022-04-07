@@ -11,7 +11,7 @@ const App = () => {
   const [starWarsCharacters, setStarWarsCharacters] = useState(peopleData);
   const [searchParam, setSearchParam] = useState('');
 
-  useEffect(async()=>{
+  useEffect(()=>{
     const fetchPeopleData = async() => {
       const people = await fetchData('people');
       setStarWarsCharacters(people);
