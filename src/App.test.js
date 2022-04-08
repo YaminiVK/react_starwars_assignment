@@ -45,7 +45,7 @@ describe("<App />", () => {
     expect(screen.getByText(/Match not found/i)).toBeInTheDocument();
   });
 
-  test('should modal on click of each character', async() => {
+  test('should open modal on click of each character', async() => {
     // setup
     render(<App />);
     const loadingState = screen.getByText(/Let's wait for the Star wars universe to load/i);

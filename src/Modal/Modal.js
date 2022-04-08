@@ -4,7 +4,7 @@ import './Modal.css'
 
 export const Modal = (props) => {
   return (
-    <div className={`modal ${props.show? 'show' : ''}`}>
+    <div className='modal'>
         <div className='modal-content'>
             <div className='modal-header'>
                 <h4 className='modal-title'>Let's look at the information about {props.person.name}</h4>

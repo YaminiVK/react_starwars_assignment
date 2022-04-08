@@ -25,8 +25,8 @@ export const handlers = [
                     "https://swapi.dev/api/vehicles/30/"
                 ],
                 "starships": ["https://swapi.dev/api/starships/13/"],
-                "created": "2014-12-10T15:20:09.791000Z",
-                "edited": "2014-12-20T21:17:50.315000Z",
+                "created": [],
+                "edited": "",
                 "url": "https://swapi.dev/api/people/5/"
             },
         ]
